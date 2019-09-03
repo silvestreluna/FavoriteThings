@@ -1,4 +1,5 @@
 ﻿using System;
+using FavoriteThings.FavoriteMovies;
 
 namespace FavoriteThings
 {
@@ -6,7 +7,16 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var getMovieInfo = new Movies();
+            var getBookInfo = new MyBooks();
+            var mySoda = new FavSoda("Coke", 2);
+            var getCityName = new FavCity();
+
+            getMovieInfo.PlayMovie();
+            getBookInfo.OpenBook();
+            mySoda.PrintSodaName();
+            getCityName.GoToCity();
+
         }
     }
 }
